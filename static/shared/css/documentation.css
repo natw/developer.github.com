@@ -42,6 +42,17 @@ h2 {
     padding-left: 22px;
   }
 
+h2 a.sectionlink {
+  color: #999;
+  padding: 0 4px 0 4px;
+  text-decoration: none;
+  visibility: hidden;
+}
+
+h2:hover > a.sectionlink {
+  visibility: visible;
+}
+
 h2 span.step {
   color: #666;
 }

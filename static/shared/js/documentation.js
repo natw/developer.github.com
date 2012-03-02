@@ -75,4 +75,12 @@ $(function() {
   var currentYear = (new Date).getFullYear();
   $("#year").text( (new Date).getFullYear() );
 
+  $('body.api .content h2').each(function() {
+    $('<a class="sectionlink">\u00B6</a>').attr(
+      'href', '#' + this.id
+    ).attr(
+      'title', 'Permalink to this section'
+    ).appendTo(this);
+  });
+
 });
